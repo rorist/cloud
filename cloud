@@ -33,12 +33,15 @@ CLEANUPS = []
 
 def setup_environment():
   if not 'OS_PASSWORD' in os.environ:
-    source = '. ~/.openrc'
-    dump = '/usr/bin/python -c "import os,pickle;print pickle.dumps(os.environ)"'
-    penv = os.popen('%s && %s' %(source,dump))
-    env = pickle.loads(penv.read())
-    os.environ = env
-  
+    try:
+        source = '. ~/.openrc'
+        dump = '/usr/bin/python -c "import os,pickle;print pickle.dumps(os.environ)"'
+        penv = os.popen('%s && %s' %(source,dump))
+        env = pickle.loads(penv.read())
+        os.environ = env
+    except:
+        pass
+
   if not 'OS_PASSWORD' in os.environ:
     raise Exception('No Openstack environnment variables found!')
 
