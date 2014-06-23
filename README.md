@@ -9,8 +9,7 @@ Installation
 * Install dependencies
 
 ```
-sudo pip install ipaddr python-neutronclient
-sudo apt-get install python-novaclient python-keystoneclient
+sudo pip install -r requirements.txt
 ```
 
 * Download openrc file to your computer

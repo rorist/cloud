@@ -1,0 +1,4 @@
+ipAddr
+python-novaclient
+python-neutronclient
+python-keystoneclient
