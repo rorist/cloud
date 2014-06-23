@@ -16,15 +16,17 @@ sudo apt-get install python-novaclient python-keystoneclient
 * Download openrc file to your computer
 ** Go to Access & Security > API Access
 ** Click Download OpenStack RC File
-** Put the openrc file in ~/openrc
+** Put the openrc file in ```~/openrc```
 
 Usage
 -----
 
-* Source openrc file, from your .bashrc for instance
+* Source openrc file, from your ```~/.bashrc``` for instance
 
- echo '. ~/openrc' >> ~/.bashrc
+```
+echo '. ~/openrc' >> ~/.bashrc
+```
 
 * Run the script without argument to launch a VM !
-* ./cloud -h # for help
+* ```./cloud -h``` # for help
 
