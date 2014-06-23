@@ -8,8 +8,10 @@ Installation
 
 * Install dependencies
 
-    sudo pip install ipaddr
-    sudo apt-get install python-novaclient python-neutronclient python-keystoneclient
+```
+sudo pip install ipaddr python-neutronclient
+sudo apt-get install python-novaclient python-keystoneclient
+```
 
 * Download openrc file to your computer
 ** Go to Access & Security > API Access
