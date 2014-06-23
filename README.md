@@ -14,9 +14,9 @@ sudo apt-get install python-novaclient python-keystoneclient
 ```
 
 * Download openrc file to your computer
-** Go to Access & Security > API Access
-** Click Download OpenStack RC File
-** Put the openrc file in ```~/openrc```
+    * Go to Access & Security > API Access
+    * Click Download OpenStack RC File
+    * Put the openrc file in ```~/openrc```
 
 Usage
 -----
